@@ -30,7 +30,7 @@ const Slogan = () => {
   return (
     <div className="w-full flex items-center justify-center h-14">
       <div
-        className={`font-ubuntu text-gray-700 sm:text-sm md:text-sm font-extrabold opacity-0 transition-opacity duration-500 ${
+        className={`font-ubuntu p-3 text-center text-gray-700 text-xs md:text-md lg:text-lg xl:text-xl font-extrabold opacity-0 transition-opacity duration-500 ${
           showSlogan ? 'opacity-100' : ''
         }`}
       >
