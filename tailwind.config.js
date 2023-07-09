@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     fontFamily:{
       ubuntu: ['Ubuntu', 'sans-serif'],
+      kannada:['Noto Sans Kannada','sans-serif']
     },
     extend: {
       backgroundImage: {

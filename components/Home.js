@@ -1,5 +1,6 @@
 import React from 'react';
-import Image from 'next/image';
+import Slogan from './slogan';
+
 const HomeContainer =()=> {
     return (
       <div className="container bg-white">
@@ -14,6 +15,7 @@ const HomeContainer =()=> {
                 className=' w-72 top-12 absolute lg:top-2 md:top-2 sm:top-2 lg:w-80 md:w-80 sm:w-80'
                 src='/images/amarT.png'
               /> */}
+              <Slogan/>
         </div>
       </div>
     );
