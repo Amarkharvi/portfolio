@@ -2,26 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Ubuntu-Regular.ttf') format('truetype');;
+};
+
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: 21, 25, 101;
+  --background-end-rgb: 21, 25, 101;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 21, 25, 101;
+    --background-end-rgb:21, 25, 101;
   }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+    background: #dbdbdb;
+
+}
+
+.mynav-items{
+  @apply mx-1 font-ubuntu font-bold p-2 hover:shadow-lg rounded-3xl text-xs cursor-pointer hover:bg-red-700  hover:text-white text-black;
+}
+
+.active{
+  @apply font-ubuntu font-bold p-2 shadow-lg rounded-3xl text-xs cursor-pointer bg-red-700 text-white ;
 }
