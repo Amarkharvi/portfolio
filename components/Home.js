@@ -1,5 +1,5 @@
 import React from 'react';
-import Slogan from './slogan';
+import Slogan from './Slogan';
 
 const HomeContainer =()=> {
     return (
