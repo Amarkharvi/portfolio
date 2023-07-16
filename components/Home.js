@@ -17,7 +17,7 @@ const HomeContainer =()=> {
                   />
                   <div className='ml-6 text-5xl font-bold text-white font-ubuntu' style={{lineHeight:'1.3em'}}> 
                     Hello ,
-                    <p className='ml-20'>I'm Amar Kharvi</p>
+                    <p className='ml-20'>I&apos;m Amar Kharvi</p>
                     <p className='ml-20'> An Full Stack Developer</p>
                   </div>
                   <div className='ml-20 mt-16 text-white text-md font-ubuntu '>
