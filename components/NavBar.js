@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 import { MenuIcon } from '@heroicons/react/outline';
+import Image from 'next/image';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,33 +11,31 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav style={{background:'#6528F7'}} >
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-3">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <svg viewBox="0 0 200 200" width="50" height="50">
-                <defs>
-                    <linearGradient id="grad" gradientTransform="rotate(45)">
-                        <stop offset="0%" stop-color="#FF0080" />
-                        <stop offset="100%" stop-color="#FF9933" />
-                    </linearGradient>
-                </defs>
-                <polygon  points="150,5 195,295 15,115" fill="url(#grad)" />
-                <polygon  points="15,50 195,295 15,15" fill="#6527BE" />
-                <text x="50%" y="60%" dominant-baseline="middle" text-anchor="middle" fill="#ffffff" font-size="60" font-weight="bold">ૐ</text>
-            </svg> 
+            <Image 
+            className='mr-3'
+              src="/icons/naruto.svg"
+              alt='logo'
+              width={40}
+              height={40}
+            />
             <div className="hidden md:block">
                 <a className="mynav-items active">Home</a>
                 <a className="mynav-items">About</a>
                 <a className="mynav-items">Contact</a>
             </div>
           </div>
-          
+          <div className='hidden md:block'>
+              <button className='text-black font-bold text-sm p-2 rounded-full' style={{background:'#53FF0C'}}>Download CV</button>
+            </div>
           <div className="-mr-2 flex md:hidden">
             <button
                 onClick={toggleMenu}
                 type="button"
-                className="text-red-700 hover:text-red-700 focus:outline-none focus:text-red-700"
+                className="text-white hover:text-black  focus:outline-none focus:text-white"
             >
                 <MenuIcon
                     className={`h-6 w-6 transition-transform duration-300 ${

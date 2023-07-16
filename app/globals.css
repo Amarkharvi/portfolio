@@ -41,13 +41,14 @@ body {
 }
 
 .mynav-items{
-  @apply mx-1 font-ubuntu font-bold p-2 hover:shadow-lg rounded-3xl text-xs cursor-pointer hover:bg-red-700  hover:text-white text-black;
+  @apply mx-1 px-6 font-ubuntu font-bold p-2 hover:shadow-lg rounded-3xl text-xs cursor-pointer hover:bg-white  hover:text-black text-white;
 }
 
 .mobile-nav-items{
-  @apply block shadow-lg text-black hover:bg-red-700 hover:text-white px-3 py-2 rounded-md text-base font-medium transition-all duration-300;
+  @apply block shadow-lg text-white hover:bg-white hover:text-black px-3 py-2 rounded-md text-base font-medium transition-all duration-300;
 }
 
 .active{
-  @apply font-ubuntu font-bold p-2 shadow-lg rounded-3xl text-xs cursor-pointer bg-red-700 text-white ;
+  @apply px-6 font-ubuntu font-bold p-2 shadow-lg rounded-3xl text-xs cursor-pointer bg-white text-black ;
 }
+
