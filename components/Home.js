@@ -9,7 +9,7 @@ const HomeContainer =()=> {
             <div className="flex">
               <div className="w-1/2 ">
                   <Image 
-                      src="/icons/shuttle&meteor.svg"
+                      src="icons/shuttle&meteor.svg"
                       alt='shuttle'
                       width={0}
                       height={0}
@@ -26,7 +26,7 @@ const HomeContainer =()=> {
               </div>
               <div className="w-1/2">
                 <Image 
-                    src="/images/amar.svg"
+                    src="images/amar.svg"
                     alt='amar'
                     width={0}
                     height={0}

@@ -17,7 +17,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <Image 
             className='mr-3'
-              src="/icons/naruto.svg"
+              src="icons/naruto.svg"
               alt='logo'
               width={40}
               height={40}

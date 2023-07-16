@@ -5,7 +5,7 @@ const BackGroundStars =({ children })=> {
         <div className="relative">
             <Image 
                 className="z-0"            
-                src="/icons/stars.svg"
+                src="icons/stars.svg"
                 alt='stars'
                 priority
                 width={0}
