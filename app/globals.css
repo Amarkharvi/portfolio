@@ -52,3 +52,11 @@ body {
   @apply px-6 font-ubuntu font-bold p-2 shadow-lg rounded-3xl text-xs cursor-pointer bg-white text-black ;
 }
 
+.mobileHeight{
+  height: auto;
+}
+@media (max-width:767px) {
+  .mobileHeight {
+    height: 130vw;
+  }
+}

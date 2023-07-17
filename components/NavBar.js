@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <nav style={{background:'#6528F7'}} >
-      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-3">
+      <div className="max-w-7xl mx-auto px-3 sm:px-3 lg:px-3">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Image 
@@ -22,20 +22,20 @@ const Navbar = () => {
               width={40}
               height={40}
             />
-            <div className="hidden md:block">
+            <div className="hidden lg:block">
                 <a className="mynav-items active">Home</a>
                 <a className="mynav-items">About</a>
                 <a className="mynav-items">Contact</a>
             </div>
           </div>
-          <div className='hidden md:block'>
+          <div className='hidden lg:block'>
               <button className='text-black font-bold text-sm p-2 rounded-full' style={{background:'#53FF0C'}}>Download CV</button>
             </div>
-          <div className="-mr-2 flex md:hidden">
+          <div className="-mr-2 flex lg:hidden md:block">
             <button
                 onClick={toggleMenu}
                 type="button"
-                className="text-white hover:text-black  focus:outline-none focus:text-white"
+                className="text-white hover:text-white  focus:outline-none focus:text-white"
             >
                 <MenuIcon
                     className={`h-6 w-6 transition-transform duration-300 ${
@@ -51,7 +51,7 @@ const Navbar = () => {
       <div
         className={`${
           isOpen ? 'block' : 'hidden'
-        } md:hidden transition-all duration-300`}
+        } lg:hidden transition-all duration-300`}
         id="mobile-menu"
       >
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
@@ -79,6 +79,13 @@ const Navbar = () => {
           >
             Contact
           </a>
+          <a 
+            href="#"
+            className={`${
+             isOpen ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-4'
+           } mobile-nav-items`}
+          >Download CV</a>
+
         </div>
       </div>
     </nav>

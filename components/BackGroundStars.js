@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const BackGroundStars =({ children })=> {
     return(
-        <div className="relative">
+        <div className="relative mobileHeight">
             <Image 
                 className="z-0"            
                 src="icons/stars.svg"
