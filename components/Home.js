@@ -30,7 +30,21 @@ const HomeContainer =()=> {
                     alt='amar'
                     width={0}
                     height={0}
-                    className='sm:w-full xl:w-1/2 2xl:w-1/2 lg:w-1/2 md:w-1/2 absolute -top-0 bottom-0 -top -right-0 w-full '
+                    className=' sm:w-full xl:w-1/2 2xl:w-1/2 lg:w-1/2 md:w-1/2 absolute -top-0 bottom-0 -top -right-0 w-full '
+                />
+              </div>
+              <div className='lg:hidden xl:hidden ml-5 2xl:hidden md:hidden sm:block block absolute top-2 left-0 sm:text-4xl  text-xl text-white font-ubuntu font-bold bottom-0 right-0'> 
+              <Image
+                src='icons/circle.svg'
+                width={0}
+                height={0}
+                className='ml-10 w-36 rotating-outer-container'
+                />
+                <Image
+                  src='icons/name.svg'
+                  width={0}
+                  height={0}
+                  className='w-24 absolute top-14 left-16'
                 />
               </div>
             </div>
