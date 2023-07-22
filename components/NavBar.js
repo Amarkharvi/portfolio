@@ -30,7 +30,7 @@ const Navbar = ({setSharedState}) => {
             </div>
           </div>
           <div className='hidden lg:block'>
-              <button className=' shadow-2xl text-black font-bold text-sm p-2 rounded-full transition-transform transform hover:-translate-y-1 hover:shadow-md ' style={{background:'#53FF0C'}}>Download CV</button>
+              <button className=' shadow-2xl shadow-black  text-black text-xs font-ubuntu font-extrabold p-2 rounded-full transition-transform transform hover:-translate-y-1 hover:shadow-md ' style={{background:'#53FF0C'}}>Download CV</button>
             </div>
           <div className="-mr-2 flex lg:hidden md:block">
             <button
