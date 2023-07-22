@@ -3,11 +3,12 @@ import React, { useState } from 'react';
 import { MenuIcon } from '@heroicons/react/outline';
 import Image from 'next/image';
 
-const Navbar = () => {
+const Navbar = ({setSharedState}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+    setSharedState(!isOpen);
   };
 
   return (
@@ -29,7 +30,7 @@ const Navbar = () => {
             </div>
           </div>
           <div className='hidden lg:block'>
-              <button className='text-black font-bold text-sm p-2 rounded-full' style={{background:'#53FF0C'}}>Download CV</button>
+              <button className=' shadow-2xl text-black font-bold text-sm p-2 rounded-full transition-transform transform hover:-translate-y-1 hover:shadow-md ' style={{background:'#53FF0C'}}>Download CV</button>
             </div>
           <div className="-mr-2 flex lg:hidden md:block">
             <button
@@ -83,7 +84,7 @@ const Navbar = () => {
             href="#"
             className={`${
              isOpen ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-4'
-           } mobile-nav-items`}
+           } mobile-nav-items `}
           >Download CV</a>
 
         </div>
