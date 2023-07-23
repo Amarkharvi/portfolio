@@ -7,7 +7,7 @@ const CustomBulletList = ({ items }) => {
     <ul>
       {items.map((item, index) => (
         <li key={index} className='py-1 px-1'>
-          <span className="custom-bullet"><p className='inline-flex items-center space-x-1'>{HTMLReactParser(item.text)}</p></span>
+          <span className="custom-bullet"><p className='inline-flex items-center pl-7'>{HTMLReactParser(item.text)}</p></span>
         </li>
       ))}
       <style jsx>{`
@@ -18,7 +18,6 @@ const CustomBulletList = ({ items }) => {
           background-image: url('icons/bullet.svg'); /* Replace with the appropriate SVG file for each bullet */
           background-size: contain;
           background-repeat: no-repeat;
-          padding-left: 20px; /* Adjust the padding to position the bullet correctly */
         }
       `}</style>
     </ul>

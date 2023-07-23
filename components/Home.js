@@ -59,7 +59,7 @@ const HomeContainer =({sharedState})=> {
                   height={0}
                   className=' opacity-95 -z-50 w-5/6 left-0 bottom-1/4 right-0 absolute flex items-center justify-center rotating-outer-container'
                   />
-                <div className='mx-2 shadow-xl text-vw-3 sm:text-lg rounded-xl font-bold font-ubuntu items-center flex justify-center bg-white absolute bottom-2 left-0 right-0 transition-transform transform hover:-translate-y-1 hover:shadow-md overflow-y-scroll h-fit' style={{color:'#413A3A'}} >
+                <div className='mx-2 shadow-xl text-vw-3 sm:text-lg md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl rounded-xl font-bold font-ubuntu items-center flex justify-center bg-white absolute bottom-2 left-0 right-0 transition-transform transform hover:-translate-y-1 hover:shadow-md overflow-y-scroll h-fit' style={{color:'#413A3A'}} >
                   <CustomBulletList items={descriptionList}/>
                 </div>
               </div>
