@@ -2,9 +2,24 @@
 import React, { useState } from 'react';
 import { MenuIcon } from '@heroicons/react/outline';
 import Image from 'next/image';
+import download from 'js-file-download';
 
 const Navbar = ({setSharedState}) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const handleDownload = () => {
+    // Construct the absolute URL for the PDF file
+    const pdfFileUrl = '/pdfs/AmarResume.pdf';
+
+    // Simulate fetching the PDF content
+    fetch(pdfFileUrl)
+      .then((response) => response.blob())
+      .then((blob) => {
+        // Use js-file-download library to download the file
+        download(blob, 'AmarKharviResume.pdf');
+      })
+      .catch((error) => console.error('Error downloading PDF:', error));
+  };
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -30,7 +45,7 @@ const Navbar = ({setSharedState}) => {
             </div>
           </div>
           <div className='hidden lg:block'>
-              <button className=' shadow-2xl shadow-black  text-black text-xs font-ubuntu font-extrabold p-2 rounded-full transition-transform transform hover:-translate-y-1 hover:shadow-md ' style={{background:'#53FF0C'}}>Download CV</button>
+              <button className=' shadow-2xl shadow-black  text-black text-xs font-ubuntu font-extrabold p-2 rounded-full transition-transform transform hover:-translate-y-1 hover:shadow-md ' style={{background:'#53FF0C'}} onClick={handleDownload}>Download CV</button>
             </div>
           <div className="-mr-2 flex lg:hidden md:block">
             <button
@@ -81,7 +96,7 @@ const Navbar = ({setSharedState}) => {
             Contact
           </a>
           <a 
-            href="#"
+            onClick={handleDownload}
             className={`${
              isOpen ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-4'
            } mobile-nav-items `}
