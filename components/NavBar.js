@@ -9,7 +9,7 @@ const Navbar = ({setSharedState}) => {
 
   const handleDownload = () => {
     // Construct the absolute URL for the PDF file
-    const pdfFileUrl = '/pdfs/AmarResume.pdf';
+    const pdfFileUrl = `${process.env.BASE_PATH || ''}/pdfs/AmarResume.pdf`;
 
     // Simulate fetching the PDF content
     fetch(pdfFileUrl)
