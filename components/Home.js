@@ -41,7 +41,7 @@ const HomeContainer =({sharedState})=> {
               </div>
               <div className="w-1/2 sm:w-full md:w-full lg:w-12 ">
                 <Image 
-                    src="images/amar.svg"
+                    src="images/amar2025.svg"
                     alt='amar'
                     priority
                     width={0}

@@ -40,8 +40,8 @@ const Navbar = ({setSharedState}) => {
             />
             <div className="hidden lg:block">
                 <a className="mynav-items active">Home</a>
-                <a className="mynav-items">About</a>
-                <a className="mynav-items">Contact</a>
+                {/* <a className="mynav-items">About</a>
+                <a className="mynav-items">Contact</a> */}
             </div>
           </div>
           <div className='hidden lg:block'>
@@ -79,7 +79,7 @@ const Navbar = ({setSharedState}) => {
           >
             Home
           </a>
-          <a
+          {/* <a
             href="#"
             className={`${
               isOpen ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-4'
@@ -100,7 +100,7 @@ const Navbar = ({setSharedState}) => {
             className={`${
              isOpen ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-4'
            } mobile-nav-items `}
-          >Download CV</a>
+          >Download CV</a> */}
 
         </div>
       </div>
