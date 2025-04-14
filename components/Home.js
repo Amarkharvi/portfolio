@@ -6,7 +6,7 @@ const HomeContainer =({sharedState})=> {
     const descriptionList =[
       {text:"Actively working full time at Benchmark Gensuite"},
       {
-        text:`Free-Lance Portfolio <img src='icons/pointer.svg'   width="30" height="30" /> <button className="ml-2 p-2 md:w-auto md:text-xs rounded-2x transition-transform transform hover:-translate-y-1 hover:shadow-md  text-white rounded-2xl shadow-2xl bg-green-900">Hire Me</button>`
+        text:`Free-Lance Portfolio <img src='icons/pointer.svg'   width="30" height="30" /> <a href="mailto:amarkharvi316@gmail.com" className="ml-2 p-2 md:w-auto md:text-xs rounded-2x transition-transform transform hover:-translate-y-1 hover:shadow-md  text-white rounded-2xl shadow-2xl bg-green-900">Hire Me</a>`
       }
     ]
     
